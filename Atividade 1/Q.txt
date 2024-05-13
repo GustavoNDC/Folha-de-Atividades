@@ -1,0 +1,32 @@
+    1. O que é uma variável em programação? Por que são necessárias?
+
+Variavel é uma coordenada que direciona a um valor
+ou um comoponente que guarda um valor
+
+
+    2. O que é tipagem dinâmica em JavaScript? Como ela difere da tipagem estática?
+
+Tipagem dinâmica refere-se a capacidade do JavaScript de identificar o tipo da variavel sem a nescecidade de declarar 
+o seu tipo no momento de declarar a variavel.
+
+
+    3. Por que é importante escolher nomes descritivos para variáveis em JavaScript?
+Qual é o impacto de escolher nomes inadequados?
+
+É importante fazer isso em qualquer linguagem, dar nomes aleatórios a variáveis pode acarretar em muita confusão ao reler
+o código, e dificulta muito trabalhar em um código sem comentários e com variaveis de nomes estranhos e vagos.
+
+
+    5. Qual é a diferença entre as palavras-chave var, let e const em JavaScript?
+
+Var declara variaveis globais
+Let declara variaveis usadas naquele bloco de código
+Const é uma variavel constante, ironicamente não pode ter valor variavel, com exeção se usado como lista, mas não pode
+ter o tipo alterado
+
+    //7.
+
+/*
+Utilize comentários de linha única e comentários de várias linhas em um programa
+simples que você escrever.
+*/
