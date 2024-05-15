@@ -1,324 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="Atividades/Atividade 1.js"></script>
+    <title>FAQ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- QUESTÃO 1 -->
-    <div class="tb">
-        <input type="checkbox"/>
-        <span>QUESTÃO 1</span><span>QUESTÃO 1</span>
-        <table class="collapsible" id="collapsible1">
-            <tr>
-                <td>
-                    <p>    1. O que é uma variável em programação? Por que são necessárias?
-                    </br>
-                    </br>
-                        Variavel é uma coordenada que direciona a um valor
-                        ou um comoponente que guarda um valor
-                    </p></td>
-            </tr>   
-        </table>    
-    </div>
+    <div class="faq">
+        <!-- QUESTÃO 1 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 1</h2>
+            <div class="answer">
+                <p>1. O que é uma variável em programação? Por que são necessárias?<br><br>
+                    Variável é uma coordenada que direciona a um valor ou um componente que guarda um valor.</p>
+            </div>
+        </div>
 
-<!-- QUESTÃO 2 -->
-    <div class="tb">
-        <input type="checkbox"/>
-        <span>QUESTÃO 2</span><span>QUESTÃO 2</span>
-        <table class="collapsible" id="collapsible1">
-            <tr>
-                <td>
-                    <p>
-                        2. O que é tipagem dinâmica em JavaScript? Como ela difere da tipagem estática?
-                    </br>
-                    </br>
-                        Tipagem dinâmica refere-se a capacidade do JavaScript de identificar o tipo da variavel sem a nescecidade de declarar 
-                        o seu tipo no momento de declarar a variavel.
-                    </p></td>
-            </tr>   
-        </table>    
-    </div>
+        <!-- QUESTÃO 2 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 2</h2>
+            <div class="answer">
+                <p>2. O que é tipagem dinâmica em JavaScript? Como ela difere da tipagem estática?<br><br>
+                    Tipagem dinâmica refere-se à capacidade do JavaScript de identificar o tipo da variável sem a
+                    necessidade de declarar o seu tipo no momento de declarar a variável.</p>
+            </div>
+        </div>
 
-<!-- QUESTÃO 3 -->
-    <div class="tb">
-        <input type="checkbox"/>
-        <span>QUESTÃO 3</span><span>QUESTÃO 3</span>
-        <table class="collapsible" id="collapsible1">
-            <tr>
-                <td>
-                    <p>
-                        3. Por que é importante escolher nomes descritivos para variáveis em JavaScript?
-                        Qual é o impacto de escolher nomes inadequados?
-                    </br>
-                    </br>
-                        É importante fazer isso em qualquer linguagem, dar nomes aleatórios a variáveis pode acarretar em muita confusão ao reler
-                        o código, e dificulta muito trabalhar em um código sem comentários e com variaveis de nomes estranhos e vagos.
-                    </p></td>
-            </tr>   
-        </table>    
-    </div>
+        <!-- QUESTÃO 3 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 3</h2>
+            <div class="answer">
+                <p>3. Por que é importante escolher nomes descritivos para variáveis em JavaScript? Qual é o impacto de
+                    escolher nomes inadequados?<br><br>
+                    É importante fazer isso em qualquer linguagem, dar nomes aleatórios a variáveis pode acarretar em
+                    muita confusão ao reler o código, e dificulta muito trabalhar em um código sem comentários e com
+                    variáveis de nomes estranhos e vagos.</p>
+            </div>
+        </div>
 
-
-<!-- QUESTÃO 4 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 4</span><span>QUESTÃO 4</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-                <p>
-
-                    4. Escreva um programa que utilize a instrução console.log() para exibir uma
-                    mensagem de boas-vindas ao usuário.</p>
-                    <h3>Aperte o botão para receber um bom dia</h3>
+        <!-- QUESTÃO 4 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 4</h2>
+            <div class="answer">
+                <p>4. Escreva um programa que utilize a instrução console.log() para exibir uma mensagem de boas-vindas
+                    ao usuário.</p>
+                <h3>Aperte o botão para receber um bom dia</h3>
                 <p id="mQ4"></p>
-                <button onclick="Q4 ()">Botão</button>        
+                <button onclick="Q4()">Botão</button>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
+        <!-- QUESTÃO 5 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 5</h2>
+            <div class="answer">
+                <p>5. Qual é a diferença entre as palavras-chave var, let e const em JavaScript?<br><br>
+                    Var declara variáveis globais. Let declara variáveis usadas naquele bloco de código. Const é uma
+                    variável constante, ironicamente não pode ter valor variável, exceto se usado como lista, mas não
+                    pode ter o tipo alterado.</p>
+            </div>
+        </div>
 
-<!-- QUESTÃO 5 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 5</span><span>QUESTÃO 5</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    5. Qual é a diferença entre as palavras-chave var, let e const em JavaScript?
-                </br>
-                </br>
-                    Var declara variaveis globais
-                    Let declara variaveis usadas naquele bloco de código
-                    Const é uma variavel constante, ironicamente não pode ter valor variavel, com exeção se usado como lista, mas não pode
-                    ter o tipo alterado
-                </p> 
-
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 6 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 6</span><span>QUESTÃO 6</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    6. Escreva um programa que declare uma variável para armazenar um número inteiro
-                    e outra variável para armazenar um número decimal. Em seguida, imprima o tipo
-                    de dado de cada variável.
-                </br>
-                </br>
-                numInt = 10;
-                numDec = 3.14;
-            </br>
-                Aperte o botão para revelar o valor de typeof numInt e typeof numDec:
-            </br>   
+        <!-- QUESTÃO 6 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 6</h2>
+            <div class="answer">
+                <p>6. Escreva um programa que declare uma variável para armazenar um número inteiro e outra variável
+                    para armazenar um número decimal. Em seguida, imprima o tipo de dado de cada variável.<br><br>
+                    numInt = 10;<br>
+                    numDec = 3.14;<br>
+                    Aperte o botão para revelar o valor de typeof numInt e typeof numDec:<br>
                 <p id="mQ6"></p>
-                <button onclick="Q6 ()">Botão</button>
-            
+                <button onclick="Q6()">Botão</button>
                 </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
+        <!-- QUESTÃO 7 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 7</h2>
+            <div class="answer">
+                <p>7. Utilize comentários de linha única e comentários de várias linhas em um programa simples que você
+                    escrever.</p>
+            </div>
+        </div>
 
-<!-- QUESTÃO 7 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 7</span><span>QUESTÃO 7</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-
-                    //7.
-                </br>
-                </br>
-                    /*
-                    Utilize comentários de linha única e comentários de várias linhas em um programa
-                    simples que você escrever.
-                    */
-                </p>
-
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 8 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 8</span><span>QUESTÃO 8</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    8. Escreva um programa que solicite ao usuário seu nome e exiba-o no console.
-                </br>
-                </br>
-            
+        <!-- QUESTÃO 8 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 8</h2>
+            <div class="answer">
+                <p>8. Escreva um programa que solicite ao usuário seu nome e exiba-o no console.</p>
                 <label for="nome8">Digite seu nome:</label>
                 <input type="text" id="nome8">
-                <p id="mQ8"></p> 
+                <p id="mQ8"></p>
                 <button onclick="Q8()">Enviar</button>
-            
-                </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 9 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 9</span><span>QUESTÃO 9</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    9. Escreva um programa que peça ao usuário para digitar sua idade e exiba-a no
-                    console.
-                </p>
-                </br>
-                </br>
-            
-                <label for="idade9">Digite seu nome:</label>
+        <!-- QUESTÃO 9 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 9</h2>
+            <div class="answer">
+                <p>9. Escreva um programa que peça ao usuário para digitar sua idade e exiba-a no console.</p>
+                <label for="idade9">Digite sua idade:</label>
                 <input type="number" id="idade9">
                 <p id="mQ9"></p>
                 <button onclick="Q9()">Enviar</button>
-                
-                </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 10 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 10</span><span>QUESTÃO 10</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    10.Escreva um programa que solicite ao usuário o seu nome e sua idade e em seguida
-                    imprima essas informações juntas em uma única linha.
-                </br>
-                </br>
-            
+        <!-- QUESTÃO 10 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 10</h2>
+            <div class="answer">
+                <p>10. Escreva um programa que solicite ao usuário o seu nome e sua idade e em seguida imprima essas
+                    informações juntas em uma única linha.</p>
                 <label for="nome10">Digite seu nome:</label>
                 <input type="text" id="nome10">
-            
-                </br>
-            
                 <label for="idade10">Digite sua idade:</label>
                 <input type="number" id="idade10">
-            
                 <p id="mQ10"></p>
                 <button onclick="Q10()">Enviar</button>
-            
-                </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 11 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 11</span><span>QUESTÃO 11</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    11.Escreva um programa que solicite ao usuário um número e converta-o para número
-                    usando parseInt(). Em seguida, exiba o número convertido no console.
-                </br>
-                </br>
-                <label for="num11">Escreva um numero com decimais</label>
+        <!-- QUESTÃO 11 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 11</h2>
+            <div class="answer">
+                <p>11. Escreva um programa que solicite ao usuário um número e converta-o para número usando parseInt().
+                    Em seguida, exiba o número convertido no console.</p>
+                <label for="num11">Digite um número:</label>
                 <input type="number" id="num11">
                 <p id="mQ11"></p>
                 <button onclick="Q11()">Enviar</button>
-                </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 12 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 12</span><span>QUESTÃO 12</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    12.Escreva um programa que peça ao usuário para digitar sua altura em centimetros e
-                    converta-a para número de ponto flutuante usando parseFloat(). Em seguida, exiba
-                    a altura convertida no console.
-                </br>
-                </br>
-                <label for="altura12">Digita sua altura em cm</label>
+        <!-- QUESTÃO 12 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 12</h2>
+            <div class="answer">
+                <p>12. Escreva um programa que peça ao usuário para digitar sua altura em centímetros e converta-a para
+                    número de ponto flutuante usando parseFloat(). Em seguida, exiba a altura convertida no console.</p>
+                <label for="altura12">Digite sua altura em cm:</label>
                 <input type="number" id="altura12">
                 <p id="mQ12"></p>
                 <button onclick="Q12()">Enviar</button>
-            
-                </p>
+            </div>
+        </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
-
-<!-- QUESTÃO 13 -->
-<div class="tb">
-    <input type="checkbox"/>
-    <span>QUESTÃO 13</span><span>QUESTÃO 13</span>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>
-
-                <p>
-                    13.Escreva um programa que solicite ao usuário sua idade e converta-a para
-                    número usando Number(). Em seguida, exiba a idade no console.
-                </br>
-                </br>
-            
-                <label for="idade13">Digite sua idade</label>
+        <!-- QUESTÃO 13 -->
+        <div class="question">
+            <h2 onclick="toggleAnswer(this)">QUESTÃO 13</h2>
+            <div class="answer">
+                <p>13. Escreva um programa que solicite ao usuário sua idade e converta-a para número usando Number().
+                    Em seguida, exiba a idade no console.</p>
+                <label for="idade13">Digite sua idade:</label>
                 <input type="text" id="idade13">
                 <p id="mQ13"></p>
                 <button onclick="Q13()">Enviar</button>
-            
-                </p>
+            </div>
+        </div>
+    </div>
 
-            </td>
-        </tr>   
-    </table>    
-</div>
 
+    <script src="Atividades/Atividade 1.js"></script>
 </body>
+
 </html>

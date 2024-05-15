@@ -35,6 +35,8 @@ function Q3() {
     }
 }
 
-functionQ4(){
-
+function Q4(nascimento) {
+    var ano4 = new Date().getFullYear();
+    var idade4 = ano4 - nascimento;
+    return idade4 >= 18 ? "Maior de idade" : "Menor de idade"
 }
