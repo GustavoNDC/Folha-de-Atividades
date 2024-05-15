@@ -3,14 +3,29 @@
 }
 
 .question {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(173, 141, 247);
     margin-bottom: 10px;
     padding: 10px;
+    position: relative; /* Para posicionar a seta dentro da caixa */
+    overflow: hidden; /* Para garantir que o conteúdo não vaze */
 }
 
 .question h2 {
     margin: 0;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Para alinhar o texto e a seta */
+    align-items: center;
+}
+
+.question h2::after {
+    content: '\25BC'; /* Seta para baixo */
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.question.open h2::after {
+    transform: rotate(180deg); /* Rotaciona a seta para cima */
 }
 
 .answer {
@@ -19,4 +34,11 @@
 
 .question.open .answer {
     display: block;
+}
+
+.answer img {
+    width: 25%; /* Ajuste o tamanho conforme necessário */
+    height: 25%; /* Ajuste o tamanho conforme necessário */
+    float: right; /* Alinha a imagem à direita */
+    margin-left: 10px; /* Espaço entre o texto e a imagem */
 }
